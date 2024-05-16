@@ -1,6 +1,6 @@
 ### Hi there 👋 I am Falaknaaz
 
-## I am a Student, ML Enthusiast and an Open Source Contributor.
+
 
 - 🔭 I’m currently working on improving my skills to make myself better.
 - 🌱 I’m currently learning Mern Stack.
