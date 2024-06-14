@@ -1,0 +1,316 @@
+%-------------------------
+% Resume in Latex
+% Author - Suyash, Kunal
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+
+\usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}  \item\small{
+    \begin{tabular*}{0.98\textwidth}[t]{
+      l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r
+    }
+      \textbf{#1} & \textit{#2} & #3
+    \end{tabular*}
+  }
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Falaknaaz Shaik} % Your Name
+\newcommand{\course}{Computer Science and Engineering} % Your Program
+\newcommand{\roll}{Software Engineer} % Your Roll No.
+\newcommand{\phone}{8341784785} % Your Phone Number
+\newcommand{\emaila}{falaknaazshaik465@gmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Falaknaaz shaik} \\ 
+    \small \raisebox{-0.1\height}\faPhone\ +91 8341784785 ~ \href{mailto:falaknaazshaik465@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{falaknaazshaik465@gmail.com}} ~ 
+    \href{https://linkedin.com/in/falaknaaz-shaik-739946216/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/falaknaaz}}  ~
+    \href{https://github.com/Falaknaaz123}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Falaknaaz}}
+    \vspace{-8pt}
+\end{center}
+}
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science and Engineering}{CGPA: 9.6}
+      {Rajiv Gandhi University of Knowledge Technologies, Nuzvid}{2020-24}
+    \resumeSubheading
+      {Pre University Course}{CGPA: 9.71}
+      {Rajiv Gandhi University of Knowledge Technologies, Nuzvid}{2018-20}
+    \resumeSubheading{Seconday school of education}{CGPA: 10.0}{ZP High School, Revendrapadu, Guntur Dist}{2017-18}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical Intern}{}
+      {Synopsys Inc, Bangalore}{July 2023 - June 2024}
+      \vspace{-0.9mm}
+      \resumeItemListStart
+    \item{Worked on Gitlab CI/CD Automation to automate the Dev and Release Pipeline. 
+    \item {Integrated PGPOOL (a middleware solution) between application and database to optimize the performance of the database queries.}
+    \item{Fixed few bugs in a microservice that orchestrates the workloads using Kubernetes.}
+    \item {In-depth understanding of Docker, Kubernetes, Helm, Gitlab Pipelines.}
+    \resumeItemListEnd
+\vspace{-1.6mm}
+          \resumeSubheading
+      {Web Development Intern}{}
+      {Edspread}{July 2022 - Sept 2022}
+      \vspace{-0.8mm}
+      \resumeItemListStart
+    \item{Participated in conception, design, development, implementation and deployment of web-based user interface systems.Created cross-browser, fully functional web pages using HTML and CSS.}
+    \resumeItemListEnd
+\vspace{-7.4mm}
+  \resumeSubHeadingListEnd
+  
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+    \resumeProject
+        {\uline{Automated Attendance System}}  %Project Name
+        {Python, Deep Learning, HTML, CSS, Bootstrap, Django} %Project Name, Location Name
+        {\href{https://github.com/Falaknaaz123/Automated-Attendance-System}{ \faGithub { }\uline{Source Code}}}
+        {} %Event Dates
+      \resumeItemListStart
+        \item {It is a CNN-based Automated Attendance system to automate group attendance.}
+        \item {It is implemented using Python, TensorFlow, and OpenCV, achieving an accuracy rate of 95 percent on average.}
+        \item {Taking a single picture of the whole class attendance will be marked for all the students.}
+    \resumeItemListEnd
+
+    \vspace{-0.9mm}
+    \resumeProject
+        {\href{https://netflix-clone-project-8b8b7.web.app/}{\uline{Netflix Clone}}} %Project Name
+        {React , Nodejs, HTML5, JavaScript, Git, Api } %Project Name, Location Name
+        {\href{https://github.com/Falaknaaz123/Netflix_Clone}{ \faGithub { }\uline{Source Code}}}
+        {} %Event Dates
+      \resumeItemListStart
+        \item {Developed Netflix clone project that aims to mimic the basic functionalities of the popular streaming platform, Netflix, using the React library.
+        }
+    \resumeItemListEnd
+
+    \vspace{-0.7mm}
+    \resumeProject
+        {\href{https://falaknaaz123.github.io/personal_portfolio_test/}{\uline{Personal Portfolio}}} %Project Name
+        {HTML, CSS, JavaScript, Git } %Project Name, Location Name
+        {\href{https://github.com/Falaknaaz123/personal_portfolio_test}{ \faGithub { }\uline{Source Code}}}
+        {} %Event Dates
+      \resumeItemListStart
+        \item {Developed and launched a personal portfolio website showcasing my skills, projects, and achievements, demonstrating proficiency in web development and design.}
+    \resumeItemListEnd
+
+\vspace{-0.7mm}
+    \resumeProject
+        {\uline{Emotion Aware Music}} %Project Name
+        {HTML, CSS, JavaScript, Bootstrap, Django Framework Deep Learning. } %Project Name, Location Name
+        {\href{https://github.com/Falaknaaz123/Emotion-aware-music}{ \faGithub { }\uline{Source Code}}}
+        {} %Event Dates
+      \resumeItemListStart
+        \item {Front-End for Music recommendation system takes the secret image of the user after logging in and converts the captured images into gray-scale image and they will be sent to the emotion classifier Machine Learning model which helps in predicting the emotion of the user.}
+    \resumeItemListEnd
+    \vspace{-1.2mm}
+
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Technical Skills and Interests}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Python, Javascript, HTML, CSS } \\
+     \textbf{Web Dev Tools}{: Nodejs, VScode, Git } \\ 
+     \textbf{Frameworks}{: ReactJs, Express } \\
+     \textbf{Cloud/Databases}{:Docker, Kubernetes, Helm, Terraform, PostgreSQL } \\  
+     
+     \textbf{Relevent Coursework}{: Design and Analysis of Algorithms, Operating Systems, Object Oriented Programming, Database Management System, Software Engineering} \\ 
+     \textbf{Areas of Interest}{: DevOps, Full-Stack Development \\
+     \textbf{Soft Skills}{: Problem Solving, Self-Learning, Communication Skills, Adaptability} \\
+    }}
+ \end{itemize}
+
+
+\vspace{-4.9mm}
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Event manager, } % Position
+    {RGUKT, Nuzvid} %Club,Event
+    {Oct 2020 - June 2022} %Tenure Period \\
+     \resumeItemListStart
+        \item {Worked as an Event manager for the events like Technical fests, farewell in our University.}
+         \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+\resumeSubHeadingListStart
+\resumePOR{NSS Volunteer, } % Position
+    {RGUKT, Nuzvid} %Club,Event
+    {May 2021 - May 2023}
+    \hspace{5.9mm} %Tenure Period \\
+     \resumeItemListStart
+        \item { I have participated in NSS Special Camp for 7 days at Yanamadala Village near Nuzvid.}
+        \item { As a part of camp I have participated in Swachh Bharat Abhiyan, Skill Enhancement Program.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4.9mm}
+
+%-----------Certifications-----------------
+\section{\textbf{CERTIFICATIONS}}
+
+    \begin{itemize}
+        \item {\href{https://coursera.org/share/6cc7e0684f6e0196db7e8964649f7d52}{\hspace{0cm}\line{SQL for Data Science (Apr 2023), }}{\href{https://coursera.org/share/4c2f96db5eda7f07403dcaf53bdcbf0b}{\hspace{0cm}\line{Foundations: Data, Data, Everywhere (Mar 2023) }}
+    \end{itemize}
+\vspace{-2.9mm}
+
+
+
+
+
+% %-----------Achievements-----------------
+% \section{\textbf{Achievements}}
+% \vspace{-0.4mm}
+% \resumeSubHeadingListStart
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+    
+% \resumePOR{Achievement } % Award
+%     {description} % Event
+%     {Event dates} %Event Year
+% \resumeSubHeadingListEnd
+% \vspace{-5mm}
+
+
+
+%-------------------------------------------
+\end{document}
