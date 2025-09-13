@@ -6,7 +6,7 @@
 - 🌱 I’m currently learning Mern Stack.
 - 💖 Love to build web apps and to code. 
 - 🥅 Contribute to more projects and learn something new everyday.
-- ⚡ Fun fact: Interested in Singing and listening Music.
+- ⚡ Fun fact: Interested in Travelling and listening Music.
 
 <br>
 <h3 align="left">Connect with me:</h3>
